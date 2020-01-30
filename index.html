@@ -6,12 +6,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <style>
+  body {
+    background: #e0ebe8;
+  }
+  hr {
+      /* border: 7px dotted white; */
+      width: 30%;
+      max-width: 80px;
+      border-style: dotted none none none;
+      border-color: white;
+      border-width: 9px;
+  }
+  .profile-pic {
+    max-width: 200px;
+    border-radius: 50%;
+  }
+  td.border-right {
+    border-right: 1px dotted #c5c5c5;
+  }
+  th {
+    text-align: left;
+  }
+  table.skills-table td {
+    padding: 10px;
+  }
+  table.skills-table {
+      border-spacing: 0px;
+  }
+  </style>
 </head>
 
 <body>
-  <h1>My name is Cassidy.</h1>
-  <p>I am trying to get better at coding, so I am doing these tutorials.</p>
-  <p>I ❤ 🐈.</p>
+  <table cellspacing="20">
+    <tr>
+      <td>  <img class="profile-pic" src="https://pbs.twimg.com/profile_images/881435067381186561/7V9rEsMA_400x400.jpg" alt="profile pic" />
+    </td>
+    <td>
+      <h1>My name is Cassidy.</h1>
+      <p>I am trying to get better at coding, so I am doing these tutorials.</p>
+      <p>I ❤ 🐈.</p>
+    </td>
+    </tr>
+  </table>
+
   <hr>
   <h3>Education</h3>
   <ul>
@@ -25,6 +63,42 @@
 <li>Reading</li>
 <li>Cooking</li>
   </ol>
+
+  <h3>Work Experience</h3>
+  <table cellspacing="10">
+    <thead>
+      <th>Experience</th>
+      <th>Period</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="work-experience">Creative Web Ideas</td>
+        <td>2015-2018</td>
+      </tr>
+      <tr>
+        <td class="work-experience">Contracted Work</td>
+        <td>2019-Present</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Skills</h3>
+  <table class="skills-table">
+  <tr border>
+    <td>HTML</td>
+    <td class="border-right">⭐️⭐️⭐️⭐️⭐️</td>
+    <td>CSS</td>
+    <td>⭐️⭐️⭐️⭐️⭐️</td>
+  </tr>
+  <tr>
+    <td>PHP</td>
+    <td class="border-right">⭐️⭐️</td>
+    <td>Photoshop</td>
+    <td>⭐️⭐️⭐️⭐️</td>
+  </tr>
+  </table>
+
+  <a href="./contact.html">Contact me</a>
 </body>
 
 </html>
